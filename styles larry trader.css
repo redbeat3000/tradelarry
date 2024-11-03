@@ -1,0 +1,88 @@
+/* styles.css */
+body {
+    background-color: #ffffff;
+    color: #000000;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.light-mode {
+    background-color: #fff;
+    color: #000;
+}
+
+.dark-mode {
+    background-color: #000;
+    color: #fff;
+}
+
+header {
+    background-color: #ff6600; /* orange */
+}
+
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+}
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+#products {
+    padding: 20px;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+.product-card {
+    background-color: #f4f4f442;
+    border: 1px solid #ff6600; /* orange */
+    border-radius: 8px;
+    margin: 10px;
+    padding: 20px;
+    width: 250px;
+    height: 300px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    word-wrap: break-word;    /* Break long words */
+    overflow-wrap: break-word; /* Ensures word wrapping in all browsers */
+
+}
+.product-card:hover {
+    transform: translateX(10px); /* Slide effect */
+}
+.product-container {
+    display: flex;
+    transition: transform 0.3s ease;
+    overflow-x: scroll;         
+    white-space: nowrap;      
+    gap: 16px;                
+    padding: 10px;    
+    scrollbar-width: none;       
+}
+.about{
+    padding: 20px;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+.elfsight-app-487b3d6b-900a-4739-93fc-cbf821f860fc{
+    border: 1px solid #00000082; /* orange */
+    border-radius: 8px;
+    margin: 10px;
+    padding: 20px;
+    transform: scale(0.8); /* Start slightly smaller */
+    animation: zoomIn 1s forwards; /* Apply the zoom-in animation */
+    transition: transform 0.4s ease;
+    cursor: pointer;
+}
+.product-container::-webkit-scrollbar {
+    display: none;
+  }
